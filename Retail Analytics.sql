@@ -642,5 +642,3 @@ select
         concat(percent_contribution,'%') as percent_contribution,
         round(sum(percent_contribution) over (order by percent_contribution desc),2) as cumulative_percent_contribution
 from cte2;
-
-select substring_index('(hello)','(',-1)
